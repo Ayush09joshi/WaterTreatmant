@@ -1,0 +1,269 @@
+/* Html's Components*/
+
+body {
+  font-family: "Montserrat";
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 3.0rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-size: 2.0rem;
+}
+
+p {
+  color: #8f8f8f;
+  text-align: center;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+#title {
+  background-image: url("../images/background.png");
+  width:100%;  
+  color: #fff;
+}
+
+
+
+
+/* Naviagtion Bar */
+
+.navbar {
+  padding: 0 0 7rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: "Montserrat-Light";
+  font-size: 1.4rem;
+}
+
+
+.bubbles img{
+  width: 50px;
+  animation: bubble 7s linear infinite;
+}
+
+.bubbles{
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+}
+
+@keyframes bubble{
+
+  0%{
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  50%{
+    
+    opacity: 1;
+  }
+
+  70%{
+    
+    opacity: 1;
+  }
+
+  100%{
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+
+.bubbles img:nth-child(1){
+  animation-delay: 2s;
+  width: 25px;
+}
+.bubbles img:nth-child(2){
+  animation-delay: 1s;
+}
+
+.bubbles img:nth-child(3){
+  animation-delay: 3s;
+  width: 25px;
+}
+
+.bubbles img:nth-child(4){
+  animation-delay: 4.5s;
+}
+
+.bubbles img:nth-child(5){
+  animation-delay: 3s;
+}
+
+.bubbles img:nth-child(6){
+  animation-delay: 6s;
+  width: 20px;
+}
+
+.bubbles img:nth-child(7){
+  animation-delay: 7s;
+  width: 35px;
+}
+
+
+/* Download buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+
+
+
+/* Features Section*/
+
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+
+}
+
+.feature-box {
+  padding: 5%;
+  text-align: center;
+}
+
+.icon {
+  color: #58dbdb;
+  margin: 1rem;
+}
+
+.icon:hover {
+  color: #1db7c5;
+}
+
+
+
+/* testimonial Section */
+
+#testimonials {
+  background-color: #58dbdb;
+  color: #fff;
+  text-align: center;
+}
+
+.test-img {
+  border-radius: 100%;
+  margin: 20px;
+  width: 10%;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+
+
+
+/* Press */
+
+#press {
+  background-color: #58dbdb;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.press-logo {
+  margin: 20px 50px 50px;
+  width: 15%;
+}
+
+
+
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-coloum {
+  padding: 3% 2%;
+  text-align: center;
+}
+
+
+
+
+/* Call of Action */
+
+#cta {
+  background-color: #58dbdb;
+  color: #fff;
+  font-size: 50px;
+  padding: 7% 15%;
+  text-align: center;
+  margin: 51px 0 80px;
+}
+
+.form-group{
+  align-items: center;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.form-control-file{
+  margin-right: 21px;
+}
+
+
+/* Footer */
+
+#footer {
+  text-align: center;
+  padding: 5rem;
+  font-size: 21px;
+}
+
+.social-icon {
+  margin: 20px 10px;
+  color: rgb(64, 60, 60);
+}
+
+
+/* These work when the screen size is reduced (making it more dynamic) */
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    /* Rotating the img back to straight */
+  }
+}
