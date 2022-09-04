@@ -34,7 +34,7 @@ p {
 #title {
   background-image: url("../images/background.png");
   width:100%;  
-  color: #fff;
+  color: rgb(243, 234, 234);
 }
 
 
@@ -61,6 +61,9 @@ p {
   font-size: 1.4rem;
 }
 
+.navbar-light .navbar-brand {
+  color: rgba(244, 242, 242, 0.9);
+}
 
 .bubbles img{
   width: 50px;
@@ -267,3 +270,4 @@ p {
     /* Rotating the img back to straight */
   }
 }
+
