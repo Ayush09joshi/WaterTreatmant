@@ -22,6 +22,13 @@ h3 {
   font-size: 2.0rem;
 }
 
+h4 {
+  font-family: "Montserrat";
+  text-align: center;
+  margin-left: 40.0rem;
+
+}
+
 p {
   color: #8f8f8f;
   text-align: center;
@@ -57,13 +64,19 @@ p {
 }
 
 .nav-link {
-  font-family: "Montserrat-Light";
+  font-family: "Montserrat";
   font-size: 1.4rem;
 }
 
 .navbar-light .navbar-brand {
   color: rgba(244, 242, 242, 0.9);
 }
+
+
+
+
+
+/* Bubbles Animation */
 
 .bubbles img{
   width: 50px;
@@ -135,6 +148,8 @@ p {
 }
 
 
+
+
 /* Download buttons */
 
 .download-button {
@@ -143,11 +158,22 @@ p {
 
 
 
+ /* How to do it
+
+#htd {
+  background-color: #58dbdb;
+  color: #fff;
+  font-size: 31px;
+  padding: 10% 5%;
+  text-align: center;
+  margin: 0px 0 80px;
+} */
+
 
 /* Features Section*/
 
 #features {
-  padding: 7% 15%;
+  padding: 5% 11%;
   background-color: #fff;
   position: relative;
 
