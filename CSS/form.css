@@ -1,110 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: 'Baloo Bhai', cursive;
-    color: white;
-    margin: 0px;
-    padding: 0px;
-    background: url('GYM_DIDI.webp');
-    background-size: cover;
-}
-
-.left {
-    display: inline-block;
-    /* border: 2px solid red; */
-    position: absolute;
-    left: 60px;
-    top: 20px;
-}
-
-.left img {
-    width: 136px;
-
-}
-
-.left div {
-    line-height: 19px;
-    font-size: 26px;
-    text-align: center;
-}
-
-.mid {
-    display: inline-block;
-    width: 46%;
-    margin: 29px 382px;
-    /* border: 2px solid green; */
-}
-
-.right {
-    position: absolute;
-    right: 34px;
-    top: 43px;
-    display: inline-block;
-    /* border: 2px solid yellow; */
-}
-
-.navbar {
-    display: inline-block;
-}
-
-.navbar li {
-    display: inline-block;
-    font-size: 27px;    
-}
-
-.navbar li a {
-    color: white;
-    text-decoration: none;
-    padding: 51px 11px; 
-}
-
-.navbar li a:hover,
-.navbar li a.active {
-    text-decoration: underline;
-    color: grey;
-
-}
-
-.btn {
-    font-family: 'Baloo Bhai', cursive;
-    margin: 0px 9px;
-    background-color: black;
-    color: white;
-    padding: 4px 14px;
-    border: 2px solid grey;
-    border-radius: 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: rgb(31, 30, 30);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4070f4;
 }
 
 .container {
-    border: 2px solid white;
-    margin: 106px 80px;
-    padding: 75px;
-    width: 33%;
-    border-radius: 28px;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-group input {
-    font-family: 'Baloo Bhai', cursive;
-    text-align: center;
-    display: block;
-    width: 508px;
-    padding: 1px;
-    border: 2px solid black;
-    margin: 11px auto;
-    font-size: 25px;
+.container header {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.container header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
     border-radius: 8px;
+    background-color: #4070f4;
 }
 
-.container h1 {
-    text-align: center;
-}
 
-.container button {
+.container form .title {
     display: block;
-    width: 74%;
-    margin: 20px auto;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.container form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+
+/* Fields Spacing */
+
+.input-field input,
+select {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+
+/* Submit Button CSS */
+
+.container form button,
+.backBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
 }
